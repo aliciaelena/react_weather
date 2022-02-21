@@ -1,14 +1,18 @@
-import logo from "./logo.svg";
 import "./App.css";
-import Weather from "./Weather.js";
+import Search from "./Search.js";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Weather city="Paris" />
-      </header>
+      <h1>Weather Search</h1>
+      <Search />
+      <br />
+      <footer>
+        <a href="https://github.com/aliciaelena/react_weather">
+          Open-source code
+        </a>{" "}
+        by Alicia Nagele
+      </footer>
     </div>
   );
 }
