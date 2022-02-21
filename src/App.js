@@ -1,22 +1,13 @@
 import logo from "./logo.svg";
 import "./App.css";
-import axios from "axios";
+import Weather from "./Weather.js";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <h1>Hello Worldtravellers</h1>
-        <h2>This is Me</h2>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Weather city="Paris" />
       </header>
     </div>
   );
